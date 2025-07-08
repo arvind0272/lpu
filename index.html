@@ -36,4 +36,110 @@
     }
     .hero h1 {
       font-size: 3em;
-      background-color: rgba(0,0,0,0.5
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #e36414;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lovely Professional University</h1>
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#apply">Apply Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Admissions Open 2025-26</h1>
+</section>
+
+<section id="courses" class="section">
+  <h2>Popular Programs</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>B.Tech (CSE)</h3>
+      <p>Specializations in AI, ML, Data Science</p>
+    </div>
+    <div class="card">
+      <h3>MBA</h3>
+      <p>Finance, Marketing, HR & more</p>
+    </div>
+    <div class="card">
+      <h3>B.Sc (Agriculture)</h3>
+      <p>Learn modern techniques in agri-science</p>
+    </div>
+  </div>
+</section>
+
+<section id="apply" class="section">
+  <h2>Apply Now</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Full Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Your Phone Number" required />
+    <textarea name="message" rows="4" placeholder="Your Message or Query"></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: admissions@lpu.in | Phone: +91 1800-102-4431</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Lovely Professional University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
